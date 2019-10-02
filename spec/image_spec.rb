@@ -77,7 +77,7 @@ RSpec.describe Image do
             ].collect{|r| r.join }.join("\n")
             expect(i.blur(2).get_image).to eq(target)
         end
-        it "should blur distance of 2" do
+        it "should blur distance of 3" do
             i = Image.new([
                 [0,0,0,0,0,0,0,0,0],
                 [0,0,0,0,0,0,0,0,0],
