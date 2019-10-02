@@ -20,7 +20,7 @@ RSpec.describe Image do
         }
     end
     describe "#blur" do 
-        it "shout blur distance of 1" do
+        it "should blur distance of 1" do
             i = Image.new([
                 [0,0,0,0],
                 [0,0,0,0],
@@ -39,7 +39,7 @@ RSpec.describe Image do
             ].collect{|r| r.join }.join("\n")
             expect(i.blur(1).get_image).to eq(target)
         end
-        it "shout blur distance of 1 on edge" do
+        it "should blur distance of 1 on edge" do
             i = Image.new([
                 [0,0,0,0],
                 [0,0,0,0],
@@ -58,7 +58,7 @@ RSpec.describe Image do
             ].collect{|r| r.join }.join("\n")
             expect(i.blur(1).get_image).to eq(target)
         end
-        it "shout blur distance of 2" do
+        it "should blur distance of 2" do
             i = Image.new([
                 [0,0,0,0],
                 [0,0,0,0],
@@ -77,7 +77,7 @@ RSpec.describe Image do
             ].collect{|r| r.join }.join("\n")
             expect(i.blur(2).get_image).to eq(target)
         end
-        it "shout blur distance of 2" do
+        it "should blur distance of 2" do
             i = Image.new([
                 [0,0,0,0,0,0,0,0,0],
                 [0,0,0,0,0,0,0,0,0],
